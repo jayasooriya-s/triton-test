@@ -1,24 +1,3 @@
-{
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
-  "installCommand": "npm ci --legacy-peer-deps || npm install",
-  "ignoreCommand": "git diff --quiet HEAD~1 HEAD -- src/",
-  "env": {
-    "NODE_ENV": "production",
-    "NODE_OPTIONS": "--max_old_space_size=3000"
-  },
-  "framework": "nextjs",
-  "github": {
-    "enabled": true,
-    "autoAlias": false,
-    "autoJobCancelPreviousOnPush": true
-  },
-  "functions": {
-    "api/**": {
-      "maxDuration": 60,
-      "memory": 1024
-    }
-  }
-}
+{}
 
 
