@@ -17,7 +17,11 @@ export const metadata: Metadata = {
   description: "Stream Big Radio Online-Hindi live with the Triton Digital Web SDK player, featuring full debug controls and live track metadata telemetry.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>{children}</body>
