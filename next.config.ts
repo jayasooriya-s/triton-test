@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Configure output file tracing for monorepo compatibility
+  outputFileTracingRoot: ".",
 };
 
 export default nextConfig;
