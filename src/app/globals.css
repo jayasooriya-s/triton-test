@@ -820,3 +820,72 @@ footer a:hover {
   gap: 0.35rem;
 }
 
+/* Manual Param Row styling */
+.param-row {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+/* Mobile Responsive Optimization Queries */
+@media (max-width: 640px) {
+  .app-container {
+    padding: 1.5rem 1rem;
+  }
+  .player-card {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    gap: 1.5rem;
+  }
+  .info-card {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    gap: 1.25rem;
+  }
+  .logo-container {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  .station-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 1rem 0.5rem;
+  }
+  .player-card {
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    gap: 1.25rem;
+  }
+  .info-card {
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+  }
+  header h1 {
+    font-size: 1.6rem;
+  }
+  header p {
+    font-size: 0.85rem;
+  }
+  
+  /* Stack the manual parameter fields on mobile */
+  .param-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .param-row select {
+    width: 100% !important;
+  }
+  .param-row input {
+    width: 100% !important;
+  }
+  .param-row button {
+    width: 100% !important;
+    padding: 0.65rem 0.75rem !important;
+  }
+}
+
+

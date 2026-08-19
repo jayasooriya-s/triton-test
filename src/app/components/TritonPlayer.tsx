@@ -537,7 +537,7 @@ export default function TritonPlayer() {
             <label style={{ fontSize: "0.8rem", fontWeight: 600, color: "var(--text-secondary)" }}>
               Manual Station/Mount Parameter Entry
             </label>
-            <div style={{ display: "flex", gap: "0.5rem" }}>
+            <div className="param-row">
               <select
                 className="debug-input"
                 style={{ width: "30%", minWidth: "80px" }}
