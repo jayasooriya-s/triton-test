@@ -1,5 +1,16 @@
 {
   "buildCommand": "next build",
   "outputDirectory": ".next",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "framework": "nextjs",
+  "regions": ["bom1"],
+  "functions": {
+    "api/**": {
+      "maxDuration": 60
+    }
+  }
 }
+
